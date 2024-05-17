@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "name": "Communication"
+    },
+    {
+        "id": 2,
+        "name": "Cultures"
+    },
+    {
+        "id": 3,
+        "name": "Développement personnel"
+    },
+    {
+        "id": 4,
+        "name": "Intelligence émotionnelle"
+    },
+    {
+        "id": 5,
+        "name": "Loisirs"
+    },
+    {
+        "id": 6,
+        "name": "Monde professionnel"
+    },
+    {
+        "id": 7,
+        "name": "Parentalité"
+    },
+    {
+        "id": 8,
+        "name": "Qualité de vie"
+    },
+    {
+        "id": 9,
+        "name": "Recherche de sens"
+    },
+    {
+        "id": 10,
+        "name": "Santé physique"
+    },
+    {
+        "id": 11,
+        "name": "Santé psychique"
+    },
+    {
+        "id": 12,
+        "name": "Spiritualité"
+    },
+    {
+        "id": 13,
+        "name": "Vie affective"
+    }
+]

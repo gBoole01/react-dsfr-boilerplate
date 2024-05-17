@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "name": "Lorem ipsum dolor sit amet",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl nec aliquam.",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl nec aliquam.",
+        "createdAt": "2022-01-01T00:00:00.000Z",
+        "updatedAt": "2022-01-01T00:00:00.000Z",
+        "type": "Type 1",
+        "nbLikes": 0,
+        "isLiked": false,
+        "isWatchLater": false,
+        "isFavorite": false,
+        "author": {
+            "id": 1,
+            "email": "user@example.fr"
+        }
+    }
+]

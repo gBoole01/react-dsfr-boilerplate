@@ -1,0 +1,15 @@
+export const ROUTES = {
+    HOME: '/',
+    SITEMAP: '/plan-du-site',
+    LEGALS: '/mentions-legales',
+    ACCESSIBILITY: '/accessibilite',
+    PRIVACY_POLICY: '/politique-de-confidentialite',
+    TERMS_AND_CONDITIONS: '/conditions-generales-utilisation',
+    FORGOT_PASSWORD: '/mot-de-passe-oublie',
+    RESET_PASSWORD: '/reinitialisation-mot-de-passe/:token',
+    REGISTER: '/inscription',
+    REGISTER_SUCCESS: '/inscription-reussie',
+    LOGIN: '/connexion',
+    EMAIL_VERIFY: '/verification-email/:token',
+    PROFILE: '/profil',
+};

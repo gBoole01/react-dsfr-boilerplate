@@ -1,0 +1,71 @@
+image: node:alpine
+
+stages:
+  - build
+  - test
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+
+variables:
+  VITE_BACKEND_URL: "http://localhost:8080"
+
+build-job:
+  stage: build
+  script:
+    - npm install --cache node_modules
+    - npm run build
+  artifacts:
+    paths:
+      - dist
+
+
+unit-test-job:
+  stage: test
+  script:
+    - npm run test
+
+e2e-test-job-firefox:
+  image: cypress/browsers:latest
+  stage: test
+  script: 
+    - npm ci
+    - npm run dev &
+    - npx cypress run --browser firefox --headless
+  artifacts:
+    when: always
+    paths:
+      - cypress/videos/**/*.mp4
+      - cypress/screenshots/**/*.png
+    expire_in: 1 day
+
+e2e-test-job-chrome:
+  image: cypress/browsers:latest
+  stage: test
+  script: 
+    - npm ci
+    - npm run dev &
+    - npx cypress run --browser chrome --headless
+  artifacts:
+    when: always
+    paths:
+      - cypress/videos/**/*.mp4
+      - cypress/screenshots/**/*.png
+    expire_in: 1 day
+
+e2e-test-job-edge:
+  image: cypress/browsers:latest
+  stage: test
+  script: 
+    - npm ci
+    - npm run dev &
+    - npx cypress run --browser edge --headless
+  artifacts:
+    when: always
+    paths:
+      - cypress/videos/**/*.mp4
+      - cypress/screenshots/**/*.png
+    expire_in: 1 day
+

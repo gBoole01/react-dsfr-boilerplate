@@ -1,0 +1,15 @@
+{
+    "id": 123,
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john-doe@example.org",
+    "gender": "M",
+    "preferences": "[]",
+    "birthdate": "2000-01-01",
+    "phone": "0123456789",
+    "username": "johndoe",
+    "commune": "Paris",
+    "postalCode": "75008",
+    "address": "1 rue de Rivoli",
+    "profession": "Rentier"
+}
